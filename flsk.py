@@ -80,4 +80,4 @@ def results():
        result = generate_text(prompt, 7, model, max_sequence_len)
        return render_template('holder2.html', result=result)
 
-app.run()
+app.run("localhost", "9999", debug=True)
